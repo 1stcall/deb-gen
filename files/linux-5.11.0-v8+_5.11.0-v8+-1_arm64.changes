@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Fri, 12 Mar 2021 13:19:43 +0000
+Source: linux-5.11.0-v8+
+Binary: linux-headers-5.11.0-v8+ linux-image-5.11.0-v8+ linux-libc-dev
+Architecture: arm64
+Version: 5.11.0-v8+-1
+Distribution: buster
+Urgency: low
+Maintainer: carl <carl@rpi4b-1.1stcall.uk>
+Changed-By: carl <carl@rpi4b-1.1stcall.uk>
+Description:
+ linux-headers-5.11.0-v8+ - Linux kernel headers for 5.11.0-v8+ on arm64
+ linux-image-5.11.0-v8+ - Linux kernel, version 5.11.0-v8+
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-5.11.0-v8+ (5.11.0-v8+-1) buster; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ 5bbf49793124104ef4d055e6373d66a826ff56fc 4820 linux-5.11.0-v8+_5.11.0-v8+-1_arm64.buildinfo
+ 671fc37d19b37075ebe58c67419ee0642d0695c2 7575240 linux-headers-5.11.0-v8+_5.11.0-v8+-1_arm64.deb
+ 6857b5d491448bdfc47be6f16b8488a9fcd6b21a 22448936 linux-image-5.11.0-v8+_5.11.0-v8+-1_arm64.deb
+ 9ef8859e454be4d4c53e0150b7cab8e7cd5a2973 1132040 linux-libc-dev_5.11.0-v8+-1_arm64.deb
+Checksums-Sha256:
+ 5cc23016a35e8ecdb35ac5e3c36b1f7ee3495940a842c2447e3329c6ff7b3589 4820 linux-5.11.0-v8+_5.11.0-v8+-1_arm64.buildinfo
+ 9046b9acf12300f4889035ea12150c2abc968aae4806f69dacbfc3bdf5f33841 7575240 linux-headers-5.11.0-v8+_5.11.0-v8+-1_arm64.deb
+ cac71e885a4818386fe87ed7a6e0c7260850fc52751aef2a32e1146d89a8bb2a 22448936 linux-image-5.11.0-v8+_5.11.0-v8+-1_arm64.deb
+ e155dbb7cbcb0f3aa79ee4fd128560ba900da4f9a2a59840a967bfd059bf7c3a 1132040 linux-libc-dev_5.11.0-v8+-1_arm64.deb
+Files:
+ 36257d93d208416d2f3402be1ff98606 4820 kernel optional linux-5.11.0-v8+_5.11.0-v8+-1_arm64.buildinfo
+ 20f14aedcc274f55d28313d712f84f0a 7575240 kernel optional linux-headers-5.11.0-v8+_5.11.0-v8+-1_arm64.deb
+ 578ef6c476e1674babb62127029a9f36 22448936 kernel optional linux-image-5.11.0-v8+_5.11.0-v8+-1_arm64.deb
+ 588f275f99c5f5323f31c4228bb2b5d7 1132040 devel optional linux-libc-dev_5.11.0-v8+-1_arm64.deb

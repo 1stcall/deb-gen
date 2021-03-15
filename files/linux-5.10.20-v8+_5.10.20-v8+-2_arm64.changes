@@ -1,0 +1,33 @@
+Format: 1.8
+Date: Sat, 06 Mar 2021 09:15:47 +0000
+Source: linux-5.10.20-v8+
+Binary: linux-headers-5.10.20-v8+ linux-image-5.10.20-v8+ linux-libc-dev
+Architecture: arm64
+Version: 5.10.20-v8+-2
+Distribution: buster
+Urgency: low
+Maintainer: carl <carl@rpi4b-1.1stcall.uk>
+Changed-By: carl <carl@rpi4b-1.1stcall.uk>
+Description:
+ linux-headers-5.10.20-v8+ - Linux kernel headers for 5.10.20-v8+ on arm64
+ linux-image-5.10.20-v8+ - Linux kernel, version 5.10.20-v8+
+ linux-libc-dev - Linux support headers for userspace development
+Changes:
+ linux-5.10.20-v8+ (5.10.20-v8+-2) buster; urgency=low
+ .
+   * Custom built Linux kernel.
+Checksums-Sha1:
+ 6a08258b301399e70defb8dad847ea661807f587 4839 linux-5.10.20-v8+_5.10.20-v8+-2_arm64.buildinfo
+ b3bd87f96c9923a78d54d571fafec4edb1506b9c 7546180 linux-headers-5.10.20-v8+_5.10.20-v8+-2_arm64.deb
+ ed6ecfe7c0ebaec883849dc3fe602b339637800d 22461432 linux-image-5.10.20-v8+_5.10.20-v8+-2_arm64.deb
+ 7db7d4e1864699d77012121a5828aefa9ac7b924 1117676 linux-libc-dev_5.10.20-v8+-2_arm64.deb
+Checksums-Sha256:
+ 4cd104060ee990304bff5ee755a7344cf4e5db646d35abe4b159304744c92578 4839 linux-5.10.20-v8+_5.10.20-v8+-2_arm64.buildinfo
+ e2428f75cdf76bc030a3be34bb280697f58757b4165dba783bd6d25846e39151 7546180 linux-headers-5.10.20-v8+_5.10.20-v8+-2_arm64.deb
+ 047ef47af82b4065f33322cc0846f604c6da9876cc0e0cf4a45c6ab3d0458b90 22461432 linux-image-5.10.20-v8+_5.10.20-v8+-2_arm64.deb
+ e7f48f13bac260d5b1779bad39350d420860e1963e09a83762da5264a2f49b0a 1117676 linux-libc-dev_5.10.20-v8+-2_arm64.deb
+Files:
+ 66202b5bb6a842fbf25e716244a5a92c 4839 kernel optional linux-5.10.20-v8+_5.10.20-v8+-2_arm64.buildinfo
+ e5162415ab40fd3da872d0416817f738 7546180 kernel optional linux-headers-5.10.20-v8+_5.10.20-v8+-2_arm64.deb
+ 7ca1d2ae8dbacc6b69c624498127324b 22461432 kernel optional linux-image-5.10.20-v8+_5.10.20-v8+-2_arm64.deb
+ d8b717d0d92e523608b1feec371abcdf 1117676 devel optional linux-libc-dev_5.10.20-v8+-2_arm64.deb

@@ -1,0 +1,4 @@
+proc        /proc       proc    defaults                        0   0
+/dev/sda1   /boot       vfat    defaults,noatime                0   2
+/dev/sda3   /	        btrfs	defaults,noatime,subvol=@root   0   0
+/dev/sda2	/mnt/rescue ext4    defaults,noatime                0   0

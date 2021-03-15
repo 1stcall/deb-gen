@@ -1,0 +1,1 @@
+console=tty1 root=[ROOTPART] rootfstype=[FSTYPE] rootflags=[ROOTFLAGS] elevator=deadline rootwait usb-storage.quirks=152d:0578:u,174c:55aa:u

@@ -1,0 +1,8 @@
+label: dos
+label-id: 0x09be20ac
+device: /dev/sdb
+unit: sectors
+
+/dev/sdb1 : start=        2048, size=      524288, type=b
+/dev/sdb2 : start=      526336, size=     4196352, type=83
+/dev/sdb3 : start=     4722688, size=  1000000000, type=83

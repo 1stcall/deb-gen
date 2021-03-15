@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Encoding=UTF-8
+Name=autostart
+Comment=My autostart on login
+Exec=/home/carl/bin/autostart.sh
+Terminal=false
