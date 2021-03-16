@@ -1,0 +1,6 @@
+debootstrap/
+image.img
+*.img
+*.out
+*.log
+.env

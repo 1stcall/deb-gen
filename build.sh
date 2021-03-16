@@ -4,6 +4,8 @@ export LOGPREFIX="[${0}]"
 
 STARTBUILD=$(date +%s)
 BUILDONLY=${BUILDONLY:-false}
+SKIPWRITE=${SKIPWRITE:-false}
+SKIPCLEAN=${SKIPCLEAN:-false}
 
 RESTORE=$(echo -en '\033[0m')
 RED=$(echo -en '\033[00;31m')
@@ -73,8 +75,12 @@ log "080-buildimg completed in $(displaytime $(( $(date +%s) - $STARTSEC )))"
 STARTSEC=$(date +%s)
 #LOGPREFIX="090-cleanup.sh" doCommand "./090-cleanup.sh &"
 #log "090-cleanup completed in $(displaytime $(( $(date +%s) - $STARTSEC )))"
-log "090-cleanup SKIPED"
-STARTSEC=$(date +%s)
-LOGPREFIX="100-writeimg.sh" doCommand "./100-writeimg.sh"
-log "100-writeimg completed in $(displaytime $(( $(date +%s) - $STARTSEC )))"
+log "090-cleanup SKIPPED"
+if [[ ${SKIPWRITE} != true ]]; then
+    STARTSEC=$(date +%s)
+    LOGPREFIX="100-writeimg.sh" doCommand "./100-writeimg.sh"
+    log "100-writeimg completed in $(displaytime $(( $(date +%s) - $STARTSEC )))"
+else
+    log "100-writeimg SKIPPED"
+fi
 log "Completed in $(displaytime $(( $(date +%s) - $STARTBUILD )))"
