@@ -11,7 +11,7 @@ outname="${filename}.out"
 
 echo "Writing image to /dev/sdb in 10 seconds"
 sleep 10
-sudo dd if=image.img of=/dev/sdb bs=128M conv=sync status=progress
+sudo dd if=image.img of=${BLKDEV} bs=128M conv=sync status=progress
 sudo sync
 sudo eject /dev/sdb
 

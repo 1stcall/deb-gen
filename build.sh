@@ -1,11 +1,13 @@
 #!/usr/bin/env bash
 set -e
 export LOGPREFIX="[${0}]"
+export BLKDEV=${BLKDEV:-/dev/sdb}
 
 STARTBUILD=$(date +%s)
 BUILDONLY=${BUILDONLY:-false}
 SKIPWRITE=${SKIPWRITE:-false}
 SKIPCLEAN=${SKIPCLEAN:-false}
+BLKDEV=${BLKDEV:-${1}}
 
 RESTORE=$(echo -en '\033[0m')
 RED=$(echo -en '\033[00;31m')

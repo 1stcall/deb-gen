@@ -1,6 +1,13 @@
 debootstrap/
+rootfs/
+bootfs/
+rescuefs/
+rootmnt/
+bootmnt/
+rescuemnt/
 image.img
 *.img
 *.out
 *.log
 .env
+070-makeboot.log
